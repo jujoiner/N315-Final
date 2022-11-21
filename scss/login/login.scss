@@ -1,0 +1,61 @@
+#logpage{
+    background-color: $site-yellow;
+
+    #logbox{
+        
+        input {
+            display: block;
+            margin-bottom: 90px;
+            width: 206.5px;
+            border: none;
+            border-bottom: 3px solid black;
+            font-size: 12px;
+            font-family: latoLight;
+            padding-bottom: 5px;
+            position: relative;
+
+            
+        }
+        input-#login{
+            width: 158px;
+            height: 52px;
+            text-align: center;
+            display: inline-block;
+            background-color: $site-yellow;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        input::placeholder {
+            color: black;
+            letter-spacing: 2px;
+        }
+    }
+
+    #signbox{
+        
+        input{
+            display: block;
+            margin-bottom: 90px;
+            width: 250.23px;
+            border: none;
+            border-bottom: 3px solid black;
+            font-size: 12px;
+            font-family: latoLight;
+            padding-bottom: 5px;
+            position: relative;
+        }
+        input-#signup{
+            width: 158px;
+            height: 52px;
+            text-align: center;
+            display: inline-block;
+            background-color: $site-yellow;
+            padding: 10px;
+            border-radius: 25px;
+        }
+        input::placeholder{
+            color: black;
+            letter-spacing: 2px;
+        }
+    }
+}

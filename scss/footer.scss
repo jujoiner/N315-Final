@@ -1,0 +1,43 @@
+footer{
+    display: flex;
+    max-width: 1280px;
+    min-width: 800px;
+    height: 100px;
+    // background-color: #587C83;
+    margin: 100px auto;
+    align-items: center;
+    flex-direction: row;
+}
+footer .logo{
+    width: 25%;
+    //color: #fff;
+    text-align: center;
+}
+footer .links a{
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    border-right: 1px solid #587C83;
+    padding-right: 20px;
+   
+}
+
+footer .copyright {
+    width: 50%;
+    font-family: 'Lato';
+    text-align: center;
+    color: #fff;
+}
+
+footer .icons {
+    width: 25%;
+    text-align: center;
+}
+
+footer .icons i img {
+    width: 40px;
+    height: 27px;
+    padding-left: 20px;
+}

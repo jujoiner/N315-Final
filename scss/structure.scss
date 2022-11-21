@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+//app styling
+
+#app {
+  margin: auto;
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+// GillSans Fonts
+
+@font-face {
+  font-family: gillSansItalic;
+  src: url(../assets/fonts/GillSans\ Italic.ttf);
+}
+
+@font-face {
+  font-family: gillSansReg;
+  src: url(../assets/fonts/GillSans.ttf);
+}
+
+@font-face {
+  font-family: gillSansLight;
+  src: url(../assets/fonts/GillSans-Light.ttf);
+}
+
+//Caveat Fonts
+
+@font-face {
+  font-family: caveatBold;
+  src: url(../assets/fonts/Caveat-Bold.ttf);
+}
+
+@font-face {
+  font-family: caveatReg;
+  src: url(../assets/fonts/Caveat-Regular.ttf);
+}
+
+//Lato Fonts
+
+@font-face {
+  font-family: latoLight;
+  src: url(../assets/fonts/Lato/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: latoReg;
+  src: url(../assets/fonts/Lato/Lato-Regular.ttf);
+}
+
+@font-face {
+  font-family: latoBlack;
+  src: url(../assets/fonts/Lato/Lato-Black.ttf);
+}

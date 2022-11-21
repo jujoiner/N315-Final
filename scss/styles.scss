@@ -1,0 +1,11 @@
+@import "structure.scss";
+@import "variables.scss";
+@import "nav.scss";
+@import "footer.scss";
+@import "home/home.scss";
+@import "browse/browse.scss";
+@import "createRecipe/createRecipe.scss";
+@import "login/login.scss";
+
+//does import order matter?
+//i dont think so, but i always put structure, variables, nav, & footer first since their stylings are needed on every page of the site - they seem the most important if that makes sense?
