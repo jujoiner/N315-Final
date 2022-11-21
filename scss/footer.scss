@@ -7,6 +7,7 @@ footer{
     margin: 100px auto;
     align-items: center;
     flex-direction: row;
+    
 }
 footer .logo{
     width: 25%;
@@ -15,20 +16,19 @@ footer .logo{
 }
 footer .links a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     margin: auto;
-    font-family: 'Lato', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: latoItalic, Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-    border-right: 1px solid #000000;
     padding-right: 20px;
    
 }
 
 footer .copyright {
     width: 50%;
-    font-family: 'Lato';
+    font-family: latoItalic;
     text-align: center;
-    color: #fff;
+    color: black;
 }
 
 footer .icons {
