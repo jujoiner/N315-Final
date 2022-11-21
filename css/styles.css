@@ -115,7 +115,7 @@ footer .links a {
   margin: auto;
   font-family: "Lato", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
-  border-right: 1px solid #587C83;
+  border-right: 1px solid #000000;
   padding-right: 20px;
 }
 
@@ -135,6 +135,11 @@ footer .icons i img {
   width: 40px;
   height: 27px;
   padding-left: 20px;
+}
+
+#browse .brw-card img {
+  height: 263px;
+  width: 300px;
 }
 
 .createRecipe-page {
@@ -209,6 +214,58 @@ footer .icons i img {
   letter-spacing: 2px;
   padding-top: 135px;
   padding-bottom: 40px;
+}
+
+#logpage {
+  background-color: #ffd972;
+}
+#logpage #logbox input {
+  display: block;
+  margin-bottom: 90px;
+  width: 206.5px;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 12px;
+  font-family: latoLight;
+  padding-bottom: 5px;
+  position: relative;
+}
+#logpage #logbox input-#login {
+  width: 158px;
+  height: 52px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffd972;
+  padding: 10px;
+  border-radius: 25px;
+}
+#logpage #logbox input::placeholder {
+  color: black;
+  letter-spacing: 2px;
+}
+#logpage #signbox input {
+  display: block;
+  margin-bottom: 90px;
+  width: 250.23px;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 12px;
+  font-family: latoLight;
+  padding-bottom: 5px;
+  position: relative;
+}
+#logpage #signbox input-#signup {
+  width: 158px;
+  height: 52px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffd972;
+  padding: 10px;
+  border-radius: 25px;
+}
+#logpage #signbox input::placeholder {
+  color: black;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,18 @@
 {
+  "name": "n315-Final",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "compile-sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "author": "Julius Joiner",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.54.5"
+  },
   "dependencies": {
-    "sass": "^1.56.1"
+    "jquery": "^3.6.1"
   }
 }
