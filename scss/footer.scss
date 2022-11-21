@@ -2,9 +2,9 @@ footer{
     display: flex;
     max-width: 1280px;
     min-width: 800px;
-    height: 100px;
+    height: 50px;
     // background-color: #587C83;
-    margin: 100px auto;
+    margin: 0 auto;
     align-items: center;
     flex-direction: row;
     
@@ -25,6 +25,7 @@ footer .links a{
 }
 
 footer .copyright {
+
     width: 50%;
     font-family: latoItalic;
     text-align: center;

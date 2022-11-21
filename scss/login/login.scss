@@ -1,13 +1,15 @@
 #logpage{
     background-color: $site-yellow;
-
+display: grid;
     #logbox{
+        width: 300px;
         
         input {
             display: block;
             margin-bottom: 90px;
             width: 206.5px;
             border: none;
+            background: none;
             border-bottom: 3px solid black;
             font-size: 12px;
             font-family: latoLight;
@@ -32,12 +34,18 @@
     }
 
     #signbox{
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-evenly;
+        width: 300px;
+        margin: 0 auto;
         
         input{
             display: block;
             margin-bottom: 90px;
             width: 250.23px;
             border: none;
+            background: none;
             border-bottom: 3px solid black;
             font-size: 12px;
             font-family: latoLight;
@@ -51,6 +59,7 @@
             display: inline-block;
             background-color: $site-yellow;
             padding: 10px;
+            border:black 1px;
             border-radius: 25px;
         }
         input::placeholder{
