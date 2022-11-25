@@ -3,12 +3,12 @@ nav {
   height: 100px;
   max-width: 1280px;
   font-family: caveatReg;
-  // background-color: red;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 38px 50px;
+  z-index: 99;
+  position: relative;
 
   .logo {
     width: 168px;
