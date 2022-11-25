@@ -425,4 +425,194 @@ footer .icons i img {
   cursor: pointer;
 }
 
+.editRecipe-page {
+  margin: 0 auto;
+  height: 2150px;
+  max-width: 1280px;
+  padding: 0px 150px;
+}
+.editRecipe-page_title {
+  height: 32px;
+  padding-top: 126px;
+  text-align: left;
+  font-family: caveatBold;
+  letter-spacing: 2.5px;
+  font-size: 25px;
+}
+.editRecipe-page_form {
+  padding-top: 100px;
+}
+.editRecipe-page_form #editRecipe-addIngredient-btn,
+.editRecipe-page_form #editRecipe-addInstruction-btn {
+  width: 38px;
+  height: 38px;
+  background-color: #efa7a7;
+  border-radius: 100px;
+  border-bottom: none !important;
+}
+.editRecipe-page_form #editRecipe-addIngredient-btn {
+  position: absolute;
+  top: 1385px;
+  left: 1400px;
+}
+.editRecipe-page_form #editRecipe-addInstruction-btn {
+  position: absolute;
+  top: 1967px;
+  left: 1400px;
+}
+.editRecipe-page_form #editRecipe-addRecipe-btn {
+  height: 52px;
+  width: 422px;
+  background-color: #efa7a7;
+  border-radius: 26px;
+  text-align: center;
+  font-size: 25px;
+  border-bottom: none !important;
+  margin: 0 auto;
+  box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.1607843137);
+  cursor: pointer;
+}
+.editRecipe-page_form #editRecipe-addRecipe-btn:hover,
+.editRecipe-page_form #editRecipe-addIngredient-btn:hover,
+.editRecipe-page_form #editRecipe-addInstruction-btn:hover {
+  background-color: #fcbcb8;
+}
+.editRecipe-page_form input {
+  display: block;
+  margin-bottom: 90px;
+  width: 980.16px;
+  border: none;
+  border-bottom: 3px solid black;
+  font-size: 20px;
+  font-family: latoLight;
+  padding-bottom: 5px;
+  position: relative;
+}
+.editRecipe-page_form input::placeholder {
+  color: black;
+  letter-spacing: 2px;
+}
+.editRecipe-page .editRecipe-page_form-title {
+  font-family: latoBlack;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding-top: 135px;
+  padding-bottom: 40px;
+}
+
+.viewRecipe-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0px 178px 0px 98px;
+  margin-top: 100px;
+}
+.viewRecipe-page .viewRecipe-page_title {
+  height: 1000px;
+  width: 5%;
+}
+.viewRecipe-page .viewRecipe-page_title p {
+  rotate: 270deg;
+  width: 180px !important;
+  margin-top: 100px;
+  margin-left: -65px;
+  font-family: latoBlack;
+  font-size: 25px;
+}
+.viewRecipe-page .viewRecipe-page_info {
+  display: flex;
+  align-items: left;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-image {
+  min-width: 468px;
+  min-height: 421px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-image img {
+  width: 100%;
+  height: 100%;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc {
+  margin: 0 auto;
+  margin-left: 40px;
+  margin-top: -100px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descTitle {
+  text-align: left;
+  font-family: latoBlack;
+  letter-spacing: 5px;
+  font-size: 25px;
+  margin-bottom: 35px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descContent {
+  font-size: 20px;
+  margin-bottom: 45px;
+  font-family: caveatReg;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descTime {
+  font-size: 20px;
+  margin-bottom: 35px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descTime .viewRecipe-descTime1 {
+  font-family: latoBlack;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descTime .viewRecipe-descTime2 {
+  font-family: caveatReg;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descServings {
+  font-size: 20px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descServings .viewRecipe-descServings1 {
+  font-family: latoBlack;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descServings .viewRecipe-descServings2 {
+  font-family: caveatReg;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-ingredTitle {
+  font-family: latoBlack;
+  margin-bottom: 35px;
+  font-size: 25px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-ingreds {
+  font-family: caveatReg;
+  font-size: 20px;
+  margin-bottom: 65px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-instructTitle {
+  margin-bottom: 35px;
+  font-family: latoBlack;
+  font-size: 25px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-instructions {
+  font-family: caveatReg;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+.viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol #viewRecipe-editRecipe-btn {
+  background-color: #ffd972;
+  border: none;
+  width: 128px;
+  height: 43px;
+  border-radius: 26px;
+  text-align: center;
+  font-size: 20px;
+  font-family: caveatReg;
+  cursor: pointer;
+  margin-bottom: 65px;
+}
+
 /*# sourceMappingURL=styles.css.map */

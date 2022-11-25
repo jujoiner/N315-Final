@@ -1,0 +1,127 @@
+.viewRecipe-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0px 178px 0px 98px;
+  margin-top: 100px;
+
+  .viewRecipe-page_title {
+    height: 1000px;
+    width: 5%;
+
+    p {
+      rotate: 270deg;
+      width: 180px !important;
+      margin-top: 100px;
+      margin-left: -65px;
+      font-family: latoBlack;
+      font-size: 25px;
+    }
+  }
+  .viewRecipe-page_info {
+    display: flex;
+    align-items: left;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    .viewRecipe-page_infoRow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .viewRecipe-image {
+        min-width: 468px;
+        min-height: 421px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .viewRecipe-desc {
+        margin: 0 auto;
+        margin-left: 40px;
+        margin-top: -100px;
+
+        .viewRecipe-descTitle {
+          text-align: left;
+          font-family: latoBlack;
+          letter-spacing: 5px;
+          font-size: 25px;
+          margin-bottom: 35px;
+        }
+        .viewRecipe-descContent {
+          font-size: 20px;
+          margin-bottom: 45px;
+          font-family: caveatReg;
+        }
+        .viewRecipe-descTime {
+          font-size: 20px;
+          margin-bottom: 35px;
+
+          .viewRecipe-descTime1 {
+            font-family: latoBlack;
+          }
+
+          .viewRecipe-descTime2 {
+            font-family: caveatReg;
+          }
+        }
+        .viewRecipe-descServings {
+          font-size: 20px;
+
+          .viewRecipe-descServings1 {
+            font-family: latoBlack;
+          }
+          .viewRecipe-descServings2 {
+            font-family: caveatReg;
+          }
+        }
+      }
+    }
+
+    .viewRecipe-page_infoCol {
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      flex-direction: column;
+
+      .viewRecipe-ingredTitle {
+        font-family: latoBlack;
+        margin-bottom: 35px;
+
+        font-size: 25px;
+      }
+      .viewRecipe-ingreds {
+        font-family: caveatReg;
+        font-size: 20px;
+        margin-bottom: 65px;
+      }
+      .viewRecipe-instructTitle {
+        margin-bottom: 35px;
+        font-family: latoBlack;
+        font-size: 25px;
+      }
+      .viewRecipe-instructions {
+        font-family: caveatReg;
+        font-size: 20px;
+        margin-bottom: 60px;
+      }
+      #viewRecipe-editRecipe-btn {
+        background-color: $site-yellow;
+        border: none;
+        width: 128px;
+        height: 43px;
+        border-radius: 26px;
+        text-align: center;
+        font-size: 20px;
+        font-family: caveatReg;
+        cursor: pointer;
+        margin-bottom: 65px;
+      }
+    }
+  }
+}

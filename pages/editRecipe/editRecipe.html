@@ -1,0 +1,38 @@
+<div class="editRecipe-page">
+  <div class="editRecipe-page_title">Hey username, edit your recipe!</div>
+  <div id="editRecipe-dynamicContent">
+    <!-- Below code will eventually load in dynamically -->
+    <form class="editRecipe-page_form">
+      <div class="general-recipe-inputs">
+        <input
+          type="file"
+          id="editRecipe-image-btn"
+          placeholder="edit Recipe Image"
+        />
+        <input type="text" placeholder="Recipe Name" />
+        <input type="text" placeholder="Recipe Description" />
+        <input type="text" placeholder="Recipe Total Time" />
+        <input type="number" placeholder="Recipe Serving size" />
+      </div>
+      <div class="ingredients-recipe-inputs">
+        <p class="editRecipe-page_form-title">Edit Ingredients:</p>
+        <input type="text" placeholder="Ingredient #1" />
+        <input type="text" placeholder="Ingredient #2" />
+        <input type="text" placeholder="Ingredient #3" />
+        <input type="submit" id="editRecipe-addIngredient-btn" value="+" />
+      </div>
+      <div class="instructions-recipe-inputs">
+        <p class="editRecipe-page_form-title">Edit Instructions:</p>
+        <input type="text" placeholder="Instruction #1" />
+        <input type="text" placeholder="Instruction #2" />
+        <input type="text" placeholder="Instruction #3" />
+        <input type="submit" id="editRecipe-addInstruction-btn" value="+" />
+      </div>
+      <input
+        type="submit"
+        id="editRecipe-addRecipe-btn"
+        value="Submit Changes"
+      />
+    </form>
+  </div>
+</div>
