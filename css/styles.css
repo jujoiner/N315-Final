@@ -98,6 +98,7 @@ nav .links #log_btn {
   background-color: #ffd972;
   padding: 10px;
   border-radius: 25px;
+  box-shadow: 5px 10px 8px rgba(69, 68, 68, 0.611);
 }
 
 footer {
@@ -144,9 +145,201 @@ footer .icons i img {
   padding-left: 20px;
 }
 
-#browse .brw-card img {
+.home {
+  background-image: linear-gradient(rgba(252, 188, 184, 0.7019607843), rgba(239, 167, 167, 0.7019607843)), url(../../assets/images/hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 800px;
+  padding: 0px 150px;
+  position: relative;
+  width: 1280px;
+  margin-top: -100px;
+  margin-bottom: -75px;
+  z-index: 5;
+}
+.home .sm_circle {
+  width: 168px;
+  height: 168px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffd972;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  font-family: caveatReg;
+}
+.home .lg_circle {
+  width: 360px;
+  height: 360px;
+  text-align: center;
+  display: inline-block;
+  background-color: #ffd972;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  font-size: 20px;
+  font-family: caveatReg;
+}
+
+#browse {
+  margin: 0 auto;
+  min-height: 800px;
+  padding: 0px 150px;
+  position: relative;
+  width: 1280px;
+  margin-top: -100px;
+  margin-bottom: -75px;
+  z-index: 5;
+  background-image: linear-gradient(rgba(166, 232, 188, 0.7), rgba(166, 232, 188, 0.7)), url(../../assets/images/recipe-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#browse_title {
+  height: 32px;
+  padding-top: 225px;
+  text-align: left;
+  font-family: caveatBold;
+  letter-spacing: 2.5px;
+  font-size: 25px;
+}
+#browse .brw-card-list {
+  margin-top: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 170px;
+}
+#browse .brw-card-list .brw-row-1 {
+  display: flex;
+  justify-content: center;
+}
+#browse .brw-card-list .brw-row-2 {
+  display: flex;
+  justify-content: center;
+}
+#browse .brw-card-list .brw-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  height: 340px;
+  width: 500px;
+  margin-bottom: 32px;
+}
+#browse .brw-card-list .brw-card .brw-img_1 {
+  min-width: 300px;
+  max-width: 300px;
   height: 263px;
-  width: 300px;
+  background-image: url(../../assets/images/recipe-pizza.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#browse .brw-card-list .brw-card .brw-img_2 {
+  min-width: 300px;
+  max-width: 300px;
+  height: 263px;
+  background-image: url(../../assets/images/recipe-burger.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#browse .brw-card-list .brw-card .brw-img_3 {
+  min-width: 300px;
+  max-width: 300px;
+  height: 263px;
+  background-image: url(../../assets/images/recipe-pilaf.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#browse .brw-card-list .brw-card .brw-img_4 {
+  min-width: 300px;
+  max-width: 300px;
+  height: 263px;
+  background-image: url(../../assets/images/recipe-chowmein.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#browse .brw-card-list .brw-card .brw-info {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 224px;
+  height: 263px;
+  border-radius: 24px;
+}
+#browse .brw-card-list .brw-card .brw-info-title {
+  text-align: left;
+  font-family: latoReg;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid black;
+  margin-bottom: 19px;
+  padding-top: 45px;
+}
+#browse .brw-card-list .brw-card .brw-info-dets {
+  width: 140px;
+  text-align: left;
+  font-family: latoReg;
+  letter-spacing: 0.9px;
+  margin-bottom: 19px;
+  font-size: 9px;
+}
+#browse .brw-card-list .brw-card .brw-info-time {
+  text-align: left;
+  font-family: latoReg;
+  letter-spacing: 0.2px;
+  margin-bottom: 19px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#browse .brw-card-list .brw-card .brw-info-time img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+}
+#browse .brw-card-list .brw-card .brw-info-serves {
+  text-align: left;
+  font-family: latoReg;
+  letter-spacing: 0.2px;
+  margin-bottom: 19px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#browse .brw-card-list .brw-card .brw-info-serves img {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
 }
 
 .createRecipe-page {
@@ -225,13 +418,19 @@ footer .icons i img {
 }
 
 #logpage {
+  margin-top: -100px;
+  margin-bottom: -75px;
+  z-index: 5;
   background-color: #ffd972;
-  display: grid;
+  display: flex;
+  position: relative;
 }
 #logpage #logbox {
   width: 300px;
+  margin: 0 auto;
+  margin-top: 221.5px;
 }
-#logpage #logbox input {
+#logpage #logbox #logbox-body input {
   display: block;
   margin-bottom: 90px;
   width: 206.5px;
@@ -243,7 +442,7 @@ footer .icons i img {
   padding-bottom: 5px;
   position: relative;
 }
-#logpage #logbox input-#login {
+#logpage #logbox #logbox-input {
   width: 158px;
   height: 52px;
   text-align: center;
@@ -251,6 +450,14 @@ footer .icons i img {
   background-color: #ffd972;
   padding: 10px;
   border-radius: 25px;
+  box-shadow: 5px 10px 8px rgba(69, 68, 68, 0.611);
+}
+#logpage #logbox #logbox-input input {
+  background-color: #ffd972;
+  border: none;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
 }
 #logpage #logbox input::placeholder {
   color: black;
@@ -259,8 +466,10 @@ footer .icons i img {
 #logpage #signbox {
   width: 300px;
   margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-#logpage #signbox input {
+#logpage #signbox #signbox-body input {
   display: block;
   margin-bottom: 90px;
   width: 250.23px;
@@ -272,15 +481,23 @@ footer .icons i img {
   padding-bottom: 5px;
   position: relative;
 }
-#logpage #signbox input-#signup {
+#logpage #signbox #signbox-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#logpage #signbox #signbox-input input {
   width: 158px;
   height: 52px;
   text-align: center;
   display: inline-block;
   background-color: #ffd972;
   padding: 10px;
-  border: black 1px;
   border-radius: 25px;
+  box-shadow: 5px 10px 8px rgba(69, 68, 68, 0.611);
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
 }
 #logpage #signbox input::placeholder {
   color: black;

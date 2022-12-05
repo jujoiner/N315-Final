@@ -1,9 +1,179 @@
 #browse{
-    .brw-card{
-        img{
-            height: 263px;
-            width: 300px;
-        }
-    }
+    margin: 0 auto;
+    min-height: 800px;
+    padding: 0px 150px;
+    position: relative;
+    width: 1280px;
+    margin-top: -100px;
+    margin-bottom: -75px;
     
+    z-index: 5;
+    background-image: linear-gradient(
+        rgba(166, 232, 188, 0.7),
+        rgba(166, 232, 188, 0.7)
+      ),
+      url(../../assets/images/recipe-hero.jpg);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &_title {
+        height: 32px;
+        padding-top: 225px;
+        text-align: left;
+        font-family: caveatBold;
+        letter-spacing: 2.5px;
+        font-size: 25px;
+      }
+      .brw-card-list{
+        margin-top: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-bottom: 170px;
+        .brw-row{
+            &-1{
+                display: flex;
+                
+                justify-content: center;
+            }
+            &-2{
+                display: flex;
+               
+                justify-content: center;
+            }
+        }
+        .brw-card{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 5px;
+            height: 340px;
+            width: 500px;
+            margin-bottom: 32px;
+
+            .brw-img{
+                
+                &_1{
+                    min-width: 300px;
+                    max-width: 300px;
+                    height: 263px;
+                    background-image: url(../../assets/images/recipe-pizza.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;    
+                }
+                &_2{
+                    min-width: 300px;
+                    max-width: 300px;
+                    height: 263px;
+                    background-image: url(../../assets/images/recipe-burger.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &_3{
+                    min-width: 300px;
+                    max-width: 300px;
+                    height: 263px;
+                    background-image: url(../../assets/images/recipe-pilaf.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                &_4{
+                    min-width: 300px;
+                    max-width: 300px;
+                    height: 263px;
+                    background-image: url(../../assets/images/recipe-chowmein.jpg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border-radius: 24px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+              
+                
+      
+            }
+            
+            .brw-info{
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background-color: #fff;
+                width: 224px;
+                height: 263px;
+                border-radius: 24px; 
+                
+                &-title{
+                    text-align: left;
+                    font-family: latoReg;
+                    letter-spacing: 1.5px;
+                    border-bottom: 3px solid black;
+                    margin-bottom: 19px;
+                    padding-top: 45px;
+                }
+                &-dets{
+                    width: 140px;
+                    text-align: left;
+                    font-family: latoReg;
+                    letter-spacing: 0.9px;
+                    margin-bottom: 19px;
+                    font-size: 9px;
+                }
+                &-time{
+                    text-align: left;
+                    font-family: latoReg;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 19px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                   
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 15px; 
+                    }
+                }
+                &-serves{
+                    text-align: left;
+                    font-family: latoReg;
+                    letter-spacing: 0.2px;
+                    margin-bottom: 19px;
+                    font-size: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                   
+                    img{
+                        width: 25px;
+                        height: 25px;
+                        margin-right: 15px; 
+                    }
+                }
+            }
+        }
+      }
 }
