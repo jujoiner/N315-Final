@@ -106,7 +106,7 @@ function initSite(){
     } else {
       localStorage.setItem("Person", "[]");
       Swal.fire({
-        title: "No students have been added yet.",
+        title: "No users have been added yet.",
         icon: "warning",
         showCancelButton: false,
         showConfirmButton: true,
