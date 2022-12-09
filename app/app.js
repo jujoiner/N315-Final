@@ -20,12 +20,17 @@ function route() {
     }
   }
 }
-function login(){
-  
-  $("#signup").click((e) => {
-    e.preventDefault();
-    let allUsers = JSON.parse(localStorage.getItem("Person"));
 
+function login() {
+
+  console.log("Yo");
+
+  
+   $("#signup").on('click',(e) => {
+    console.log("Yo");
+      e.preventDefault();
+      let allUsers = JSON.parse(localStorage.getItem("Person"));
+  
     let fn = $("#firstName").val();
     let ln = $("#lastName").val();
     let pn = $("#signpassword").val();
@@ -60,7 +65,9 @@ function login(){
     }
   });
 
-  $("#login_btn").click((e) => {
+
+  
+  $("#logbox-input").on("click",(e) => {
     e.preventDefault();
 
     //question v
@@ -80,13 +87,33 @@ function login(){
       };
     // $.each(allUsers, function (idx, user) {
     //   console.log(user.fName);
-    //   $("#app").append(
-    //     `<p><b>Full Name:</b> ${user.fName} ${user.lName} <b>Age:</b> ${user.age} <b>Phone Number:</b> ${user.phoneNumber} <b>Email Address:</b> ${user.email} <b>Classes:</b> ${user.classOne} ${user.classTwo} ${user.classThree}</p>`
-    //   );
+       $("#navigation").append(
+         `<div class="logo">
+         <a href="#home"><img src="assets/images/logo.svg" /></a>
+       </div>
+ 
+       <div class="links">
+         <a href="#home">Home</a>
+         <a href="#browse">Browse</a>
+         <a href="#createRecipe">Create Recipe</a>
+         <a href="#yourRecipes">Your Recipes</a>
+         <div id="log_btn">
+          <a href="#login">Login</a>
+        </div>
+      </div>`
+      );
+      $(".copyright").append(
+        `<div class="links">
+        <a id="#login" href="#">Login</a>
+        <a id="#Category" href="#">Recipes by Category</a>
+        <a id="#Copyright" href="#">Privacy and Copyright</a>
+        <a id="#recipe" href="#">Create Recipe</a>
+        <a id="#" href="#">Your Recipes</a>
+      </div>`
+     );
     // });
   }
 });
-
 }
 
 //Initializing functions
@@ -116,6 +143,7 @@ function initSite(){
     console.log("No local storage found");
   }
 }
+
 $(document).ready(function () {
   initApp();
   initSite();

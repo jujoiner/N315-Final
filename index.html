@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    
     <!-- Navigation -->
-    <nav>
+    <nav id="navigation">
       <div class="logo">
         <a href="#home"><img src="assets/images/logo.svg" /></a>
       </div>
@@ -33,6 +34,9 @@
       <!--  another cahnge -->
     </div>
     <!-- Dynamic Content Ends Here -->
+    <script type="module" src="lib/jquery-3.6.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="module" src="app/app.js"></script>
 
     <!-- Footer -->
     <footer>
@@ -41,11 +45,11 @@
       </div>
       <div class="copyright">
         <div class="links">
-          <a id="#login" href="#">Login</a>
-          <a id="#Category" href="#">Recipes by Category</a>
-          <a id="#Copyright" href="#">Privacy and Copyright</a>
-          <a id="#recipe" href="#">Create Recipe</a>
-          <a id="#" href="#">Your Recipes</a>
+          <a id="#login">Login</a>
+          <a id="#browse">Recipes by Category</a>
+          <a id="#">Privacy and Copyright</a>
+          <a id="#createRecipe">Create Recipe</a>
+          <a id="#yourRecipes">Your Recipes</a>
         </div>
       </div>
       <div class="icons">
@@ -57,9 +61,5 @@
         </i>
       </div>
     </footer>
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script type="module" src="lib/jquery-3.6.1.min.js"></script>
-    <script type="module" src="app/app.js"></script>
   </body>
 </html>

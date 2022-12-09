@@ -152,36 +152,53 @@ footer .icons i img {
   background-size: cover;
   margin: 0 auto;
   min-height: 800px;
-  padding: 0px 150px;
+  padding: 0px 0px;
   position: relative;
   width: 1280px;
   margin-top: -100px;
   margin-bottom: -75px;
   z-index: 5;
 }
-.home .sm_circle {
+.home .circles {
+  display: inline-block;
+  height: 500px;
+  width: 500px;
+  line-height: 18px;
+  border-radius: 50%;
+  color: black;
+}
+.home .circles p .title {
+  text-align: left;
+  font-family: latoReg;
+  letter-spacing: 1.5px;
+  border-bottom: 3px solid black;
+  margin-bottom: 19px;
+  padding-top: 45px;
+}
+.home .circles .sm_circle {
+  float: right;
   width: 168px;
   height: 168px;
   text-align: center;
-  display: inline-block;
-  background-color: #ffd972;
+  background-color: #fcbcb8;
   padding: 10px;
   border-radius: 50%;
   border: none;
   font-size: 20px;
   font-family: caveatReg;
+  z-index: 5;
 }
-.home .lg_circle {
+.home .circles .lg_circle {
   width: 360px;
   height: 360px;
   text-align: center;
-  display: inline-block;
   background-color: #ffd972;
-  padding: 10px;
+  padding: -10px;
   border-radius: 50%;
   border: none;
   font-size: 20px;
   font-family: caveatReg;
+  z-index: 1;
 }
 
 #browse {
