@@ -160,22 +160,51 @@ footer .icons i img {
   z-index: 5;
 }
 .home .circles {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
   display: inline-block;
   height: 500px;
   width: 500px;
   line-height: 18px;
   border-radius: 50%;
   color: black;
+  left: 400px;
+  right: 400px;
+  top: 225px;
 }
-.home .circles p .title {
+.home .circles .cr_stuff {
+  position: relative;
+}
+.home .circles .cr_stuff .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: left;
   font-family: latoReg;
   letter-spacing: 1.5px;
-  border-bottom: 3px solid black;
   margin-bottom: 19px;
   padding-top: 45px;
 }
+.home .circles .cr_stuff .dets {
+  position: absolute;
+  width: 140px;
+  text-align: left;
+  font-family: latoReg;
+  letter-spacing: 0.9px;
+  margin-top: 15px;
+  margin-left: 100px;
+  margin-right: -100px;
+  margin-bottom: 19px;
+  font-size: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .home .circles .sm_circle {
+  position: relative;
   float: right;
   width: 168px;
   height: 168px;
@@ -187,8 +216,11 @@ footer .icons i img {
   font-size: 20px;
   font-family: caveatReg;
   z-index: 5;
+  right: 75px;
+  bottom: 50px;
 }
 .home .circles .lg_circle {
+  position: relative;
   width: 360px;
   height: 360px;
   text-align: center;
@@ -198,7 +230,7 @@ footer .icons i img {
   border: none;
   font-size: 20px;
   font-family: caveatReg;
-  z-index: 1;
+  z-index: 5;
 }
 
 #browse {

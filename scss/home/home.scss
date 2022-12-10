@@ -18,31 +18,60 @@
     z-index: 5;
 
     .circles{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+        position: absolute;
         display:inline-block;
         height: 500px;
         width: 500px; 
         line-height: 18px;
         border-radius: 50%;
         color: black;
-    p{
+        left: 400px;
+        right: 400px;
+        top: 225px;
+    .cr_stuff{
+        position: relative;
+    
       .title{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
         text-align: left;
         font-family: latoReg;
         letter-spacing: 1.5px;
-        border-bottom: 3px solid black;
+        // border-bottom: 3px solid black;
         margin-bottom: 19px;
         padding-top: 45px;
       }
       .dets{
+        position: absolute;       
+        width: 140px;
+        text-align: left;
+        font-family: latoReg;
+        letter-spacing: 0.9px;
+        margin-top: 15px;
+        margin-left: 100px;
+        margin-right: -100px;
+        margin-bottom: 19px;
+        font-size: 9px;
+        display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 
       }
     }
     .sm_circle{
+        position: relative;
         float: right;
         width: 168px;
         height: 168px;
         text-align: center;
-   
+
         background-color: $site-lightPink;
         padding: 10px;
         border-radius: 50%;
@@ -51,10 +80,11 @@
         font-size: 20px;
         font-family: caveatReg;
         z-index: 5;
-       
+       right: 75px;
+       bottom: 50px;
     }
     .lg_circle{ 
-           
+        position: relative;
         width: 360px;
         height: 360px;
         text-align: center;
@@ -66,7 +96,7 @@
         border: none;
         font-size: 20px;
         font-family: caveatReg;
-        z-index: 1;
+        z-index: 5;
     }
 }
 }
