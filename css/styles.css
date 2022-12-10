@@ -376,23 +376,28 @@ footer .icons i img {
 .createRecipe-page_form {
   padding-top: 100px;
 }
-.createRecipe-page_form #createRecipe-addIngredient-btn,
-.createRecipe-page_form #createRecipe-addInstruction-btn {
-  width: 38px;
-  height: 38px;
+.createRecipe-page_form .ingredients-recipe-inputs,
+.createRecipe-page_form .instructions-recipe-inputs {
+  position: relative;
+}
+.createRecipe-page_form .ingredients-recipe-inputs .addBtn-ingred,
+.createRecipe-page_form .ingredients-recipe-inputs .addBtn-instr,
+.createRecipe-page_form .instructions-recipe-inputs .addBtn-ingred,
+.createRecipe-page_form .instructions-recipe-inputs .addBtn-instr {
+  width: 40px;
+  height: 40px;
   background-color: #efa7a7;
-  border-radius: 100px;
-  border-bottom: none !important;
-}
-.createRecipe-page_form #createRecipe-addIngredient-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  font-size: 30px;
   position: absolute;
-  top: 1385px;
-  left: 1400px;
-}
-.createRecipe-page_form #createRecipe-addInstruction-btn {
-  position: absolute;
-  top: 1967px;
-  left: 1400px;
+  right: 5px;
+  bottom: 10px;
+  text-align: center;
+  padding-top: 10px;
+  z-index: 99;
 }
 .createRecipe-page_form #createRecipe-addRecipe-btn {
   height: 52px;
@@ -407,8 +412,8 @@ footer .icons i img {
   cursor: pointer;
 }
 .createRecipe-page_form #createRecipe-addRecipe-btn:hover,
-.createRecipe-page_form #createRecipe-addIngredient-btn:hover,
-.createRecipe-page_form #createRecipe-addInstruction-btn:hover {
+.createRecipe-page_form .addBtn-ingred:hover,
+.createRecipe-page_form .addBtn-instr:hover {
   background-color: #fcbcb8;
 }
 .createRecipe-page_form input {

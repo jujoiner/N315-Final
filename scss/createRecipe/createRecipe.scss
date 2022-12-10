@@ -17,6 +17,29 @@
   &_form {
     padding-top: 100px;
 
+    .ingredients-recipe-inputs,
+    .instructions-recipe-inputs {
+      position: relative;
+
+      .addBtn-ingred,
+      .addBtn-instr {
+        width: 40px;
+        height: 40px;
+        background-color: $site-darkPink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        font-size: 30px;
+        position: absolute;
+        right: 5px;
+        bottom: 10px;
+        text-align: center;
+        padding-top: 10px;
+        z-index: 99;
+      }
+    }
+
     // #createRecipe-image-btn {
     //   background-color: $site-darkPink;
     //   text-align: center;
@@ -24,27 +47,6 @@
     //   width: 110px;
     //   height: 36px;
     // }
-
-    #createRecipe-addIngredient-btn,
-    #createRecipe-addInstruction-btn {
-      width: 38px;
-      height: 38px;
-      background-color: $site-darkPink;
-      border-radius: 100px;
-      border-bottom: none !important;
-    }
-
-    #createRecipe-addIngredient-btn {
-      position: absolute;
-      top: 1385px;
-      left: 1400px;
-    }
-
-    #createRecipe-addInstruction-btn {
-      position: absolute;
-      top: 1967px;
-      left: 1400px;
-    }
 
     #createRecipe-addRecipe-btn {
       height: 52px;
@@ -60,8 +62,8 @@
     }
 
     #createRecipe-addRecipe-btn:hover,
-    #createRecipe-addIngredient-btn:hover,
-    #createRecipe-addInstruction-btn:hover {
+    .addBtn-ingred:hover,
+    .addBtn-instr:hover {
       background-color: $site-lightPink;
     }
 
