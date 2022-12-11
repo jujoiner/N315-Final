@@ -78,8 +78,9 @@ nav .logo {
   height: 55px;
 }
 nav .logo img {
-  width: 168px;
+  width: 184px;
   height: 55px;
+  padding: 5px;
 }
 nav .links a {
   padding: 0px 10px;
@@ -182,26 +183,42 @@ footer .icons i img {
   align-items: center;
   justify-content: space-evenly;
   text-align: left;
-  font-family: latoReg;
+  font-family: latoBlack;
   letter-spacing: 1.5px;
-  margin-bottom: 19px;
-  padding-top: 45px;
+  font-size: 24px;
+  margin-left: 19px;
+  padding-top: 115px;
+  padding-bottom: 5px;
 }
-.home .circles .cr_stuff .dets {
+.home .circles .cr_stuff .lg.dets {
   position: absolute;
   width: 140px;
-  text-align: left;
+  text-align: center;
   font-family: latoReg;
-  letter-spacing: 0.9px;
   margin-top: 15px;
-  margin-left: 100px;
+  margin-left: 105px;
   margin-right: -100px;
   margin-bottom: 19px;
-  font-size: 9px;
+  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.home .circles .cr_stuff .sm.dets {
+  position: absolute;
+  width: 140px;
+  text-align: left;
+  font-family: latoItalic;
+  padding: 19px;
+  margin-top: 16px;
+  margin-left: 10px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 10px;
 }
 .home .circles .sm_circle {
   position: relative;
