@@ -100,4 +100,23 @@
         }
     
 }
+
+@media (max-width: 768px) {
+    #signbox{
+        position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+        
+    }
+}
+
+@media (max-width: 390px) {
+    #signbox{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
 }

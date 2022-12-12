@@ -27,12 +27,14 @@ function route() {
       MODEL.changePage(pageID, subPageID);
     }
   }
+  login();
+
 }
 
 function login() {
   console.log("Yo");
 
-  $("#signup").on("click", (e) => {
+  $("#signup").click( (e) => {
     console.log("Yo");
     e.preventDefault();
     let allUsers = JSON.parse(localStorage.getItem("Person"));
@@ -331,7 +333,6 @@ function initApp() {
   } else {
     console.log("No localStorage");
   }
-  login();
   initSite();
 }
 
