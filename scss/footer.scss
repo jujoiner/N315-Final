@@ -41,3 +41,19 @@ footer .icons i img {
   height: 27px;
   padding-left: 20px;
 }
+
+@media (max-width: 768px) {
+  footer {
+    min-width: 768px !important;
+    max-width: 768px !important;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 360px) {
+  footer {
+    min-width: 360px !important;
+    max-width: 360px !important;
+    overflow: hidden;
+  }
+}

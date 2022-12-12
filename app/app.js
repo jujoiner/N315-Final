@@ -314,6 +314,11 @@ function initApp() {
   $(window).on("hashchange", route);
   route();
 
+  //Mobile nav-menu functionality
+  $(".links").on("click", function (e) {
+    $("#toggle").prop("checked", false);
+  });
+
   if (localStorage) {
     let recipe = localStorage.getItem("Recipe");
     if (recipe) {

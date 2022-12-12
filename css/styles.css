@@ -82,6 +82,20 @@ nav .logo img {
   height: 55px;
   padding: 5px;
 }
+nav #toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+nav label {
+  display: none;
+  position: absolute;
+  right: 5px;
+  line-height: 50px;
+  color: #000;
+  font-size: 35px;
+  top: 35px;
+}
 nav .links a {
   padding: 0px 10px;
   font-size: 25px;
@@ -91,7 +105,7 @@ nav .links a {
 nav .links a:hover {
   text-decoration: underline;
 }
-nav .links #log_btn {
+nav .links .nav-loginButton {
   width: 158px;
   height: 52px;
   text-align: center;
@@ -102,6 +116,69 @@ nav .links #log_btn {
   box-shadow: 5px 10px 8px rgba(69, 68, 68, 0.611);
 }
 
+@media (max-width: 768px) {
+  nav {
+    padding: 10px;
+    height: 100px;
+  }
+  nav label {
+    display: block;
+    cursor: pointer;
+    padding-right: 20px;
+  }
+  nav #toggle {
+    display: none;
+  }
+  nav #toggle:checked + .links {
+    display: block;
+  }
+  nav #toggle ~ .links a {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 200ms cubic-bezier(0.23, 1, 0.32, 1);
+    font-size: 0px;
+  }
+  nav #toggle:checked ~ .links a {
+    border: 1px solid #f25c54;
+    height: 40px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: height 200ms cubic-bezier(0.03, 1, 0.32, 1);
+  }
+  nav .links {
+    position: absolute;
+    top: 0;
+    margin-top: 92px;
+    right: 5px;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  nav .links a {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    color: #000;
+    background-color: #efa7a7;
+  }
+  nav .links a:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+  nav .links a:hover {
+    text-decoration: none;
+    color: #f25c54;
+    transition: 0.2s ease-in, 0.2s ease-out;
+  }
+  nav .links .nav-loginButton {
+    margin-left: 20px !important;
+  }
+}
 footer {
   display: flex;
   max-width: 1280px;
@@ -146,6 +223,20 @@ footer .icons i img {
   padding-left: 20px;
 }
 
+@media (max-width: 768px) {
+  footer {
+    min-width: 768px !important;
+    max-width: 768px !important;
+    overflow: hidden;
+  }
+}
+@media (max-width: 360px) {
+  footer {
+    min-width: 360px !important;
+    max-width: 360px !important;
+    overflow: hidden;
+  }
+}
 .home {
   background-image: linear-gradient(rgba(252, 188, 184, 0.7019607843), rgba(239, 167, 167, 0.7019607843)), url(../../assets/images/hero.jpg);
   background-position: center;
@@ -793,7 +884,7 @@ footer .icons i img {
     margin: 0 auto;
     padding: 0px !important;
     position: relative;
-    max-width: 360px;
+    max-width: 360px !important;
     margin-top: -100px;
     margin-bottom: -75px;
   }
@@ -1088,6 +1179,7 @@ footer .icons i img {
   align-items: left;
   justify-content: center;
   flex-direction: column;
+  margin-top: 64px;
 }
 .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-ingredTitle {
   font-family: latoBlack;
@@ -1120,6 +1212,60 @@ footer .icons i img {
   font-family: caveatReg;
   cursor: pointer;
   margin-bottom: 65px;
+}
+
+@media (max-width: 768px) {
+  .viewRecipe-page {
+    max-width: 768px;
+    padding: 0px 32px 0px 64px !important;
+    margin-top: 32px;
+  }
+  .viewRecipe-page .viewRecipe-page_info {
+    flex-direction: column;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow {
+    flex-direction: column;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc {
+    margin-left: 0px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol {
+    flex-direction: column;
+  }
+}
+@media (max-width: 360px) {
+  .viewRecipe-page {
+    max-width: 360px;
+    padding: 0px 32px 0px 64px !important;
+    margin-top: 0px;
+  }
+  .viewRecipe-page .viewRecipe-page_title {
+    height: 1200px;
+  }
+  .viewRecipe-page .viewRecipe-page_title p {
+    margin-left: -90px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-image {
+    min-width: 251px;
+    min-height: 226px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descContent {
+    font-size: 16px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descTime {
+    font-size: 16px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoRow .viewRecipe-desc .viewRecipe-descServings {
+    font-size: 16px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-ingreds {
+    font-size: 16px;
+  }
+  .viewRecipe-page .viewRecipe-page_info .viewRecipe-page_infoCol .viewRecipe-instructions {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
