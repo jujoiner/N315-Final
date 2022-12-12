@@ -4,7 +4,8 @@ export function changePage(pageID, subPage, callback) {
     subPage == undefined &&
     pageID != "createRecipe" &&
     pageID != "yourRecipes" &&
-    pageID != "viewRecipe"
+    pageID != "viewRecipe" &&
+    pageID != "login"
   ) {
     $.get(`pages/${pageID}/${pageID}.html`, function (data) {
       $("#app").html(data);
@@ -43,6 +44,17 @@ export function changePage(pageID, subPage, callback) {
 
       // callback();
       //error if subpage id can't be found
+    }).fail((error) => {
+      if (error.status == "404") {
+        alert("Page cannot be found.");
+      }
+    });
+  } else if (pageID == "login") {
+    $.get(`pages/login/login.html`, function (data) {
+      $("#app").html(data);
+      // login();
+      callback();
+      //error if page id can't be found
     }).fail((error) => {
       if (error.status == "404") {
         alert("Page cannot be found.");

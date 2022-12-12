@@ -19,6 +19,8 @@ function route() {
     MODEL.changePage(pageID, subPageID, addRecipeToYourRecipesPG, editRecipe);
   } else if (pageID == "viewRecipe") {
     MODEL.changePage(pageID, subPageID, editRecipe);
+  } else if (pageID == "login") {
+    MODEL.changePage(pageID, subPageID, login);
   } else {
     //direct subpages
     if (pageID == subPageID) {
@@ -27,14 +29,12 @@ function route() {
       MODEL.changePage(pageID, subPageID);
     }
   }
-  login();
-
 }
 
 function login() {
   console.log("Yo");
 
-  $("#signup").click( (e) => {
+  $("#signup").on("click", (e) => {
     console.log("Yo");
     e.preventDefault();
     let allUsers = JSON.parse(localStorage.getItem("Person"));
