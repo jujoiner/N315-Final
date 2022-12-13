@@ -3,7 +3,7 @@
 ### By Elissa Murphy & Julius Joiner
 
 ---
-Web 4 Link: https://in-info-web4.informatics.iupui.edu/~elrmurph/n315/N315-Final-1/#home
+Web 4 Link: https://in-info-web4.informatics.iupui.edu/~elrmurph/N315-Final-1/#home
 
 Prototype: https://xd.adobe.com/spec/000d9233-c620-4eb6-5884-adaea1a04abb-763c/
 
@@ -25,3 +25,7 @@ For this application, I was responsible for building artboards 4-7. These boards
 
 JULIUS: 
 
+For this application I was responsible for creating and styling the Home, Browse, and Login pages as well as the footer. By being in charge of the login page that means I am also responsible for creating sign up and login functions as well as giving user feedback if things go wrong as they use the page. 
+
+The login function is not fully functional, however all pages I worked on have CSS styling.
+Browse and login pages are not responsive at smaller sizes.
