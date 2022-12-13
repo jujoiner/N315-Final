@@ -102,21 +102,15 @@
 }
 
 @media (max-width: 768px) {
-    #signbox{
-        position: relative;
+    #logpage{
       display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+      flex-direction: column;
         
+      #logbox{
+        flex-direction: column;
+      }
     }
 }
 
-@media (max-width: 390px) {
-    #signbox{
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-}
+
 }

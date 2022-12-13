@@ -117,4 +117,12 @@ flex-direction: column;
         z-index: 5;
     }
 }
+
+@media (max-width: 768px) {
+
+.circles{
+    left: 25px;
+    right: 25px;
+  }
+}
 }
