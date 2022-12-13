@@ -12,7 +12,7 @@
         rgba(166, 232, 188, 0.7),
         rgba(166, 232, 188, 0.7)
       ),
-      url(../../assets/images/recipe-hero.jpg);
+      url(../assets/images/recipe-hero.jpg);
   
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@
                     min-width: 300px;
                     max-width: 300px;
                     height: 263px;
-                    background-image: url(../../assets/images/recipe-pizza.jpg);
+                    background-image: url(../assets/images/recipe-pizza.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -74,7 +74,7 @@
                     min-width: 300px;
                     max-width: 300px;
                     height: 263px;
-                    background-image: url(../../assets/images/recipe-burger.jpg);
+                    background-image: url(../assets/images/recipe-burger.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -87,7 +87,7 @@
                     min-width: 300px;
                     max-width: 300px;
                     height: 263px;
-                    background-image: url(../../assets/images/recipe-pilaf.jpg);
+                    background-image: url(../assets/images/recipe-pilaf.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -100,7 +100,7 @@
                     min-width: 300px;
                     max-width: 300px;
                     height: 263px;
-                    background-image: url(../../assets/images/recipe-chowmein.jpg);
+                    background-image: url(../assets/images/recipe-chowmein.jpg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
@@ -179,7 +179,7 @@
 
     @media (max-width: 768px) {
         .brw-card-list{
-            
+
         }
     }
 
