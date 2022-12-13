@@ -26,6 +26,18 @@ p {
   position: relative;
 }
 
+// Sweet Alerts
+.swal2-confirm.swal2-styled,
+.swal2-cancel.swal2-styled {
+  background-color: #ffd972 !important;
+  color: #000 !important;
+
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+}
+
 // GillSans Fonts
 
 @font-face {

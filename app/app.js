@@ -235,11 +235,62 @@ function addRecipeToYourRecipesPG() {
 
   //IN PROGRESS
   $("#editRecipe").on("click", (e) => {
-    console.log("edit works");
-  });
+    console.log("EditRecipe Btn Works");
+    MODEL.changePage("editRecipe");
 
+    $.get(`pages/editRecipe/editRecipe.html`, function (data) {
+      $("#app").html(data);
+      $(
+        "#editRecipe-dynamicContent"
+      ).html(`    <form class="editRecipe-page_form">
+        <div class="general-recipe-inputs">
+          <input
+            type="file"
+            id="editRecipe-image-btn"
+            placeholder="edit Recipe Image"
+          />
+          <input type="text" placeholder="Recipe Name" />
+          <input type="text" placeholder="Recipe Description" />
+          <input type="text" placeholder="Recipe Total Time" />
+          <input type="number" placeholder="Recipe Serving size" />
+        </div>
+        <div class="ingredients-recipe-inputs">
+          <p class="editRecipe-page_form-title">Edit Ingredients:</p>
+          <input type="text" placeholder="Ingredient #1" />
+          <input type="text" placeholder="Ingredient #2" />
+          <input type="text" placeholder="Ingredient #3" />
+          <div class="addBtn-ingred">
+            <p>+</p>
+          </div>
+        </div>
+        <div class="instructions-recipe-inputs">
+          <p class="editRecipe-page_form-title">Edit Instructions:</p>
+          <input type="text" placeholder="Instruction #1" />
+          <input type="text" placeholder="Instruction #2" />
+          <input type="text" placeholder="Instruction #3" />
+          <div class="addBtn-instr">
+            <p>+</p>
+          </div>
+        </div>
+        <input
+          type="submit"
+          id="editRecipe-addRecipe-btn"
+          value="Submit Changes"
+        />
+      </form>`);
+
+      // callback();
+      //error if subpage id can't be found
+    }).fail((error) => {
+      if (error.status == "404") {
+        alert("Page cannot be found.");
+      }
+    });
+  });
   //IN PROGRESS
   $("#viewRecipe").on("click", (e, id) => {
+    MODEL.changePage("viewRecipe");
+
     $.get(`pages/viewRecipe/viewRecipe.html`, function (data) {
       $("#app").html(data);
 
@@ -249,7 +300,7 @@ function addRecipeToYourRecipesPG() {
         <div class="viewRecipe-page_info">
           <div class="viewRecipe-page_infoRow">
             <div class="viewRecipe-image">
-              <img src="../../assets/images/recipe-pizza.jpg" alt="" />
+              <img src="assets/images/recipe-pizza.jpg" alt="" />
             </div>
             <div class="viewRecipe-desc">
               <div class="viewRecipe-descTitle">Description:</div>
@@ -266,7 +317,7 @@ function addRecipeToYourRecipesPG() {
               </div>
             </div>
           </div>
-  
+
           <div class="viewRecipe-page_infoCol">
             <div class="viewRecipe-ingredTitle">Ingredients:</div>
             <div class="viewRecipe-ingreds">
@@ -288,6 +339,7 @@ function addRecipeToYourRecipesPG() {
         //IN PROGRESS
         $("#viewRecipe-editRecipe-btn").on("click", (e) => {
           console.log("view edit btn works");
+          MODEL.changePage("editRecipe");
         });
       });
     }).fail((error) => {
@@ -301,15 +353,12 @@ function addRecipeToYourRecipesPG() {
   $("#deleteRecipe").on("click", (e) => {
     console.log("delete works");
     localStorage.removeItem("Recipe");
+    addRecipeToYourRecipesPG();
   });
 }
 
 //IN PROGRESS
-function editRecipe() {
-  $("#editRecipe").on("click", (e) => {
-    console.log("EditRecipe Btn Works");
-  });
-}
+function editRecipe() {}
 
 //Initializing functions
 function initApp() {

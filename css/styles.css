@@ -25,6 +25,17 @@ p {
   position: relative;
 }
 
+.swal2-confirm.swal2-styled,
+.swal2-cancel.swal2-styled {
+  background-color: #ffd972 !important;
+  color: #000 !important;
+}
+.swal2-confirm.swal2-styled a,
+.swal2-cancel.swal2-styled a {
+  color: #000 !important;
+  text-decoration: none !important;
+}
+
 @font-face {
   font-family: gillSansItalic;
   src: url(../assets/fonts/GillSans\ Italic.ttf);
@@ -498,7 +509,6 @@ footer .icons i img {
   height: 25px;
   margin-right: 15px;
 }
-
 .createRecipe-page {
   margin: 0 auto;
   height: 2150px;
@@ -740,6 +750,22 @@ footer .icons i img {
   color: black;
   letter-spacing: 2px;
 }
+@media (max-width: 768px) {
+  #logpage #signbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 390px) {
+  #logpage #signbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
 
 .yourRecipes-page {
   margin: 0 auto;
@@ -750,7 +776,7 @@ footer .icons i img {
   margin-top: -100px;
   margin-bottom: -75px;
   z-index: 5;
-  background-image: linear-gradient(rgba(166, 232, 188, 0.7), rgba(166, 232, 188, 0.7)), url(../../assets/images/recipe-hero.jpg);
+  background-image: linear-gradient(rgba(166, 232, 188, 0.7), rgba(166, 232, 188, 0.7)), url(../assets/images/recipe-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

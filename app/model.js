@@ -1,4 +1,4 @@
-export function changePage(pageID, subPage, callback) {
+export function changePage(pageID, subPage, callback, callbackTwo) {
   //getting the subpage id & navigating with url
   if (
     subPage == undefined &&
@@ -32,6 +32,7 @@ export function changePage(pageID, subPage, callback) {
       $("#app").html(data);
 
       callback();
+      callbackTwo();
       //error if subpage id can't be found
     }).fail((error) => {
       if (error.status == "404") {
@@ -40,6 +41,17 @@ export function changePage(pageID, subPage, callback) {
     });
   } else if (pageID == "viewRecipe") {
     $.get(`pages/viewRecipe/viewRecipe.html`, function (data) {
+      $("#app").html(data);
+
+      // callback();
+      //error if subpage id can't be found
+    }).fail((error) => {
+      if (error.status == "404") {
+        alert("Page cannot be found.");
+      }
+    });
+  } else if (pageID == "editRecipe") {
+    $.get(`pages/editRecipe/editRecipe.html`, function (data) {
       $("#app").html(data);
 
       // callback();
