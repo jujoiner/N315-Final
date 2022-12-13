@@ -216,11 +216,11 @@ function addRecipeToYourRecipesPG() {
           <div class="yourRecipes-list_item-info-title">${recipe.title}</div>
           <div class="yourRecipes-list_item-info-desc">${recipe.desc}</div>
           <div class="yourRecipes-list_item-info-time">
-            <img src="../../assets/images/time.svg" alt="" />
+            <img src="assets/images/time.svg" alt="" />
             ${recipe.time}
           </div>
           <div class="yourRecipes-list_item-info-serving">
-            <img src="../../assets/images/servings.svg" alt="" />
+            <img src="assets/images/servings.svg" alt="" />
             ${recipe.size}
           </div>
         </div>
